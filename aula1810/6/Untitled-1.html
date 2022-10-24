@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+    function leapyear(year)
+        {
+        return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+        }
+        console.log(leapyear(2016));
+        console.log(leapyear(2000));
+        console.log(leapyear(1700));
+        console.log(leapyear(1800));
+        console.log(leapyear(100));</script>
+</head>
+<body>
+    <h1>Exercicio 6</h1>
+    <h2 id="cxc"></h2>
+    <button type="button" onclick="document.getElementById('cxc').innerHTML = ('2016 is a ' + leapyear(2016) +' leap year!')">Verifique se 2016 é um ano bissexto</button>
+    <button type="button" onclick="document.getElementById('cxc').innerHTML = ('2000 is a ' + leapyear(2000) +' leap year!')">Verifique se 2000 é um ano bissexto</button>
+    <button type="button" onclick="document.getElementById('cxc').innerHTML = ('1700 is a ' + leapyear(1700) +' leap year!')">Verifique se 1700 é um ano bissexto</button>
+    <button type="button" onclick="document.getElementById('cxc').innerHTML = ('1800 is a ' + leapyear(1800) +' leap year!')">Verifique se 1800 é um ano bissexto</button>
+    <button type="button" onclick="document.getElementById('cxc').innerHTML = ('100 is a ' + leapyear(100) +' leap year!')">Verifique se 100 é um ano bissexto</button>
+    <img src="Captura de tela 2022-10-18 095356.png" alt="">
+</body>
+</html>

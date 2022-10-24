@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <html> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript basic animation</title>
+  <style>
+    *{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+  <script type="text/javascript">
+    function animate_string(id) 
+{
+    var element = document.getElementById(id);
+    var textNode = element.childNodes[0]; // assuming no other children
+    var text = textNode.data;
+
+setInterval(function () 
+{
+ text = text[text.length - 1] + text.substring(0, text.length - 1);
+  textNode.data = text;
+}, 100);
+}
+  </script>
+  </head> <body onload="animate_string('target')"></body>
+  
+  <body>
+  <h1>EXERCICIO 5</h1><pre id="target">w3resource </pre>
+  <img src="Captura de tela 2022-10-18 092924.png" alt="">
+  </body> 
+  </html>

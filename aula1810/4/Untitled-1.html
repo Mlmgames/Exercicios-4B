@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    <script>
+        var side1 = 5; 
+var side2 = 6; 
+var side3 = 7; 
+var s = (side1 + side2 + side3)/2;
+var area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+console.log(area);
+    </script>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+    <h2 id="cxc"></h2>
+    <button type="button" onclick="document.getElementById('cxc').innerHTML = (area)"></button>
+    <img src="Captura de tela 2022-10-18 092209.png">
+</body>
+</html>
