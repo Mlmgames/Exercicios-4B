@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <h1>Exercicio 9</h1>
+    <h2 id="cxc"></h2>
     <style>
         *{
             text-align: center;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: "Brush Script MT", cursive;
+            background-color: chartreuse;
         }
+        
+        .img{align-content: center;}
     </style>
 </head>
 <body>
@@ -20,14 +25,17 @@ if (today.getMonth()==11 && today.getDate()>25)
 {
 cmas.setFullYear(cmas.getFullYear()+1); 
 }  
+
 var one_day=1000*60*60*24;
-console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
+document.write(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
 " days left until Christmas!");
 
     </script>
-    <h1>Exercicio 9</h1>
-    <h2 id="cxc"></h2>
-    <button type="button" onclick="document.getElementById('cxc').innerHTML = ('Faltan ' + (Math.ceil((cmas.getTime()-today.getTime())/(one_day))) + ' dias para o natal')"></button>
+   <div img>
+
+    <img src="natal-removebg-preview.png" alt="">
+
+   </div>
     <img src="Captura de tela 2022-10-18 113159.png" alt="">
 </body>
 </html>
